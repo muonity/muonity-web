@@ -71,6 +71,7 @@ h1, h2, h3, p { margin: 0; }
 .game-card-content { display: flex; flex-direction: column; height: 100%; }
 .game-card picture { display: block; flex: 0 0 auto; }
 .game-card img { display: block; width: 100%; height: auto; }
+.game-card-pizza picture img { aspect-ratio: 1122 / 1402; object-fit: cover; object-position: center top; }
 .game-status { display: flex; align-items: flex-end; justify-content: center; flex: 1; min-height: 100px; padding: 6px 12px; border-top: 1px solid color-mix(in srgb, var(--card-accent) 26%, transparent); background: radial-gradient(ellipse at top, color-mix(in srgb, var(--card-accent) 10%, #040A19), #040817 80%); text-align: center; color: #C1CCE0; font-size: 14px; letter-spacing: .045em; }
 .store-availability { width: 180px; max-width: 100%; display: grid; justify-items: center; }
 .game-card .store-badge { width: 100%; height: auto; transition: filter .2s ease; }
