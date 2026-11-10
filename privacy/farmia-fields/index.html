@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farmia Fields Privacy Policy | Muonity</title>
+  <meta name="description" content="How Farmia Fields processes account, farm, social, notification and optional measurement data, and how to exercise privacy rights.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B1020">
+  <link rel="canonical" href="https://muonity.com/privacy/farmia-fields/">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../assets/icons/muonity-symbol.png">
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="../../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/apple-touch-icon.png">
+  <link rel="preload" href="../../assets/fonts/outfit-variable-1.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../css/fonts.css">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/privacy.css">
+  <style>
+    .legal-policy h3 { margin-top: 26px; color: var(--color-text); font-size: 19px; line-height: 1.4; font-weight: 500; }
+    .legal-policy ul, .legal-policy ol { margin-block: 14px; padding-left: 24px; color: #CDD4E2; }
+    .legal-policy li + li { margin-top: 6px; }
+    .legal-policy nav { margin-top: 12px; }
+    .legal-policy nav a { display: inline-flex; align-items: center; min-height: 44px; }
+  </style>
+</head>
+
+<body class="privacy-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="privacy-header privacy-container">
+    <a class="brand" href="https://muonity.com/" aria-label="Muonity home">
+        <img class="brand-symbol" src="../../assets/icons/muonity-symbol.png" width="192" height="192" alt="">
+        <span class="wordmark" aria-hidden="true">MU<img src="../../assets/icons/muonity-symbol.png" width="192" height="192" alt="">NITY</span>
+      </a>
+    <a class="privacy-back" href="https://muonity.com/">Back to Muonity <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="privacy-document privacy-container legal-policy" id="main">
+    <div class="privacy-intro">
+      <h1>Privacy Policy — Farmia Fields</h1>
+      <p class="privacy-updated">Last updated: <time datetime="2026-11-10">November 10, 2026</time></p>
+      <p>Information about personal data in Farmia Fields, developed and published by Muonity.</p>
+      <nav aria-label="Farmia Fields legal documents"><a href="../../terms/farmia-fields/">Terms of Service</a> · <a href="../../account-deletion/farmia-fields/">Account Deletion</a></nav>
+    </div>
+    <section aria-labelledby="controller">
+      <h2 id="controller">1. Who is responsible</h2>
+      <p>Farmia Fields is an Android farming game developed and published by Muonity. The controller responsible for the processing described here is Lukáš Pokorný, an individual operating under the name Muonity. Muonity is a project name, not a separate company.</p>
+      <p>For privacy questions or requests, contact <a href="mailto:dev@muonity.com">dev@muonity.com</a>. Website: <a href="https://muonity.com/">muonity.com</a>. This policy covers the game and its associated online services. It describes the current version, including services present in testing; it does not represent a promise that future features are available.</p>
+    </section>
+    <section aria-labelledby="account">
+      <h2 id="account">2. Google sign-in and account information</h2>
+      <p>The current Android sign-in flow uses your Google account and Firebase Authentication to identify your game account and restore access to cloud progress. It processes a Firebase user identifier, linked Google account identifiers, sign-in credentials and tokens, and profile information such as a display name and email where supplied by the sign-in service. We do not receive your Google password.</p>
+      <p>Existing accounts can retain their previous Firebase identity. A fresh installation is directed to Google sign-in rather than creating a new anonymous farm. Authentication services also process technical information, including IP addresses and service logs, to operate the account and prevent abuse. Signing in does not itself authorize optional analytics.</p>
+    </section>
+    <section aria-labelledby="farm">
+      <h2 id="farm">3. Farm progress and cloud services</h2>
+      <p>Our cloudFarm backend uses Firebase and Google Cloud services, including Cloud Firestore, to store and validate game progress. Records include your account identifier, profile, level, EXP, Coins, Gems, seeds and other inventory, crops, trees, flowers, herbs, plots, timers, decorations, achievements, reward claims and relevant activity. Save revisions, timestamps and operation receipts help synchronize changes and prevent duplicate rewards or commands.</p>
+      <p>The game stores account-specific local caches and pending actions. Online operations and rewards depend on server validation; cached or pending progress is not necessarily a confirmed cloud save. Some activities can be displayed or queued offline, but social actions and other online features need a connection. We do not promise unrestricted offline play or an automatic merge of conflicting changes.</p>
+      <p>This account-linked gameplay processing is needed to provide the requested game and is separate from optional Analytics events. Turning Analytics off does not prevent the backend from processing the actions needed to play and save your farm.</p>
+    </section>
+    <section aria-labelledby="social">
+      <h2 id="social">4. Social profiles and farm visits</h2>
+      <p>When you set up and publish your social profile, other players can find its public Player ID, chosen nickname, preset avatar, level, profile creation date, friend count and achievement completion information. Your Firebase UID and Google email are not included in the public profile returned by the social service. Avoid using sensitive information in a nickname.</p>
+      <p>We store profile and nickname reservations, friend requests and relationships, visit and interaction records, daily action limits, and recent activity. Confirmed friends can view supported farm areas and perform permitted helping actions or in-game pranks, such as adding bugs or weeds. Farm projections expose the gameplay information needed for these visits, rather than your private account credentials or wallet.</p>
+      <p>You can decline requests or remove a friend to end further access through that relationship. Recent social activity is limited to 20 displayed records; that display limit does not mean all underlying server records are deleted at the same time. To report misuse or request removal of profile information, contact <a href="mailto:dev@muonity.com">dev@muonity.com</a>.</p>
+    </section>
+    <section aria-labelledby="security">
+      <h2 id="security">5. App Check, Play Integrity and security</h2>
+      <p>The normal Android build integrates Firebase App Check with Google Play Integrity. Google processes integrity and technical signals to assess whether requests come from the expected app and device environment. Our backend receives and verifies authentication and App Check tokens to protect game data and services.</p>
+      <p>These checks are distinct from analytics and do not depend on enabling the Usage Analytics switch. Private diagnostic builds can use the Firebase debug provider for testing instead of Play Integrity; this is not a claim that a production device-verification test has passed. Technical request, error and security logs may be processed by Google Cloud infrastructure.</p>
+    </section>
+    <section aria-labelledby="measurement">
+      <h2 id="measurement">6. Usage analytics and crash reports</h2>
+      <p>Google Analytics for Firebase and Firebase Crashlytics are integrated for optional usage measurement and stability diagnostics. In the current introductory screen, the <strong>Usage Analytics</strong> switch initially appears ON. Collection remains disabled until the choice is successfully saved by pressing <strong>Agree and Play</strong>. Keeping it ON and confirming enables usage analytics and crash reporting; switching it OFF before confirming keeps both disabled.</p>
+      <p>You can change the stored choice in <strong>Settings → Usage analytics and crash reports</strong>. The preference is stored on the device and restored on later launches. Advertising choices are managed separately. A default switch position, Google sign-in or acceptance of the Terms is not, by itself, consent to optional processing.</p>
+      <p>Enabled Analytics can process app-instance identifiers, app and device information, sessions and defined gameplay events such as game opening, planting, harvesting, seed acquisition, leveling up, fertilizer use and ad interactions. Custom event parameters are restricted to permitted game identifiers and numeric values. We do not intentionally include your name, email, Firebase UID, sign-in tokens or free-form text in those custom events, and do not set an Analytics User-ID. In-game seed acquisition events are not a statement that real-money purchases are active.</p>
+      <p>Crashlytics can process crash traces, installation identifiers, app version, device characteristics and selected error codes. Crash information can be stored locally while reporting is disabled; enabling reporting can allow pending reports to be uploaded. Technical identifiers should not be assumed to be anonymous.</p>
+      <p>Disabling the setting stops further configured optional collection, resets local Analytics data and requests deletion of unsent crash reports. This does not erase data already received by the services. Analytics advertising storage, advertising user-data consent and advertising personalization are denied in the current integration. For optional processing we rely on consent where required; the interface must obtain a valid choice, including any necessary parental authorization.</p>
+    </section>
+    <section aria-labelledby="ads">
+      <h2 id="ads">7. Advertisements and advertising choices</h2>
+      <p>The app includes Google AdMob rewarded-ad support and Google User Messaging Platform (UMP). The reviewed configuration uses Google test ads; live verified rewarded-ad grants are disabled. We do not describe commercial rewarded ads or a particular reward as currently available.</p>
+      <p>Where the ad SDK runs, it can process IP addresses and approximate location derived from them, app/device identifiers where permitted, ad interactions and diagnostic or fraud-prevention information. Test or non-personalized ads are not a guarantee of zero data processing. UMP evaluates privacy requirements after the introductory choice and shows a configured message where required. Ad initialization or preloading depends on UMP allowing ad requests, which may rely on an earlier saved choice.</p>
+      <p>Use <strong>Settings → Ad Privacy Choices</strong> when available to review the advertising options provided by UMP. Availability depends on its requirements and configuration. Changing an ad choice discards previously loaded ads. Turning Usage Analytics off is not the same as changing advertising choices. Before any live advertising rollout, the configuration and this policy must reflect the applicable audience and consent requirements.</p>
+    </section>
+    <section aria-labelledby="purchases">
+      <h2 id="purchases">8. Google Play Billing and purchases</h2>
+      <p>Google Play distributes the app. Google Play Billing and server purchase-verification code are present, but real-money purchases are disabled in the reviewed configuration. Coins and Gems can be game resources without representing a paid purchase.</p>
+      <p>If purchases are enabled in a later release, their data processing will be disclosed before use. The prepared integration would send product identifiers, purchase tokens, transaction status and account-linked references to Google and our verification backend to validate, grant, restore or revoke entitlements. Google would process payment details; Muonity would not receive full payment card details. This describes prepared functionality, not transactions currently available to players.</p>
+    </section>
+    <section aria-labelledby="notifications">
+      <h2 id="notifications">9. Notifications and device registrations</h2>
+      <p>Firebase Cloud Messaging supports optional notifications about farm conditions, rewards and social activity. Settings provide a master control and individual categories, and Android notification permission is separate. The app does not request Android notification permission during the first-launch introduction. Device behavior can depend on the Android version and your system settings.</p>
+      <p>Notification processing uses account-linked installation/device identifiers, an FCM registration token when delivery is permitted, category preferences, timestamps, foreground/background presence, delivery records and the game conditions needed to select a relevant notification. Token collection is gated on the app preference and system permission. A registration and short presence updates can still be sent without a push token when notifications are off, to keep account-wide delivery state accurate and suppress unnecessary messages.</p>
+      <p>Friend Activity and Special Events preferences default off. Special Events is prepared infrastructure, not a promise of a currently active broadcast service. You can manage notifications in the game and Android settings. Turning off notifications does not delete your account or cloud progress.</p>
+    </section>
+    <section aria-labelledby="bases">
+      <h2 id="bases">10. Purposes and legal bases</h2>
+      <ul><li><strong>Providing the requested service:</strong> authentication, cloud saves, server-validated gameplay and the social functions you request, where necessary to perform our agreement. Providing these functions requires the corresponding information.</li><li><strong>Consent where required:</strong> optional Analytics and crash reporting, advertising-related processing and optional notifications. Refusing optional measurement does not remove core gameplay access. Withdrawing consent applies to future processing.</li><li><strong>Legitimate interests:</strong> proportionate security, fraud prevention, reliable service operation and handling support, subject to a balancing of your rights. This does not replace consent when consent is legally required.</li><li><strong>Legal obligations:</strong> responding to lawful requirements or retaining information when applicable law requires it.</li></ul>
+      <p>If you contact us, we process the email address and information you supply to respond, resolve the request and document necessary action. Please send only what is needed, not passwords or access tokens.</p>
+    </section>
+    <section aria-labelledby="recipients">
+      <h2 id="recipients">11. Recipients and international transfers</h2>
+      <p>Google provides the authentication, cloud infrastructure, database, integrity, measurement, messaging, advertising and distribution services described above. Google and its service providers receive the information needed for each service. Their role as processor or independent controller depends on the service and applicable terms. Other players receive the public profile and friend-visible information described in this policy. Information may also be disclosed to authorities or professional advisers when legally required or necessary to protect legal rights. We do not sell your personal information.</p>
+      <p>Processing may occur outside your country or the European Economic Area. Deployment records place the Firestore database and notification workers in Europe and some backend functions in the United States; this does not mean all Google processing is confined to those locations. Applicable transfer arrangements may include adequacy decisions or standard contractual clauses. You can ask us about the safeguards relevant to our processing.</p>
+      <ul><li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li><li><a href="https://firebase.google.com/support/privacy">Privacy and security in Firebase</a></li><li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps using its services</a></li><li><a href="https://policies.google.com/privacy/frameworks">Google international-transfer information</a></li></ul>
+    </section>
+    <section aria-labelledby="retention">
+      <h2 id="retention">12. Retention and security</h2>
+      <p>Account, farm and social records are retained to provide the account, progress and relationships until they are no longer needed or a valid deletion request is fulfilled, subject to limited legal or security exceptions. Some operation and reward receipts are needed to prevent replay or duplicate grants. Local caches and settings remain until cleared through app/device controls or removed with the app; device backups may behave differently.</p>
+      <p>The notification code schedules event, batch and delivery history for deletion after seven days and cleans up device registrations inactive for 30 days, with safeguards for active bindings. Cleanup and provider TTL processing are asynchronous, not guarantees of deletion at an exact second. These periods do not apply to all account data or Analytics retention.</p>
+      <p>Analytics, Crashlytics, authentication logs, infrastructure logs and backups follow their relevant service settings, policies and legal requirements. We do not state an unverified universal server-retention period. If information must be retained after a request, we will explain the category, purpose and applicable period or criteria.</p>
+      <p>Network communication uses encrypted connections. Authentication, App Check and server-side access checks protect account operations. No system is completely secure, and transport encryption is not a promise of end-to-end encryption or encrypted local backups.</p>
+    </section>
+    <section aria-labelledby="children">
+      <h2 id="children">13. Age and young players</h2>
+      <p>Farmia Fields is intended for players aged <strong>13 and over</strong>. It is not intended for children under 13. This audience setting does not mean every player aged 13 can independently consent to all processing: the age for digital consent and requirements for parental authorization vary by country.</p>
+      <p>Where applicable law requires a parent or guardian to authorize consent-based processing, a young player cannot provide that authorization merely by pressing Agree and Play. Optional measurement should remain off unless the necessary valid authorization is available. We do not claim that a verified age-check or parental-consent mechanism has been implemented.</p>
+      <p>We do not knowingly ask children under 13 to provide personal contact details through the game. If you believe such information has been processed, or you are a parent or guardian seeking assistance, contact <a href="mailto:dev@muonity.com">dev@muonity.com</a>. We will assess the request and take appropriate action.</p>
+    </section>
+    <section aria-labelledby="rights">
+      <h2 id="rights">14. Your rights and account deletion</h2>
+      <p>Where GDPR applies, you may request access, correction, erasure, restriction and, where applicable, data portability. You may object to processing based on legitimate interests and withdraw consent without affecting processing lawfully carried out before withdrawal. You may complain to your competent data protection authority, including the <a href="https://uoou.gov.cz/en">Czech Office for Personal Data Protection</a> where relevant.</p>
+      <p>Use our <a href="../../account-deletion/farmia-fields/">Farmia Fields Account Deletion page</a> to start an account or data-deletion request by email. You may also contact <a href="mailto:dev@muonity.com">dev@muonity.com</a> about other privacy rights. We may need proportionate verification; a public Player ID alone does not prove account ownership.</p>
+      <p>Deleting the app does not itself delete the cloud account. Deleting game data does not delete your Google account or all records Google controls independently. You can use <a href="https://myaccount.google.com/data-and-privacy">Google privacy controls</a> for those records.</p>
+    </section>
+    <section aria-labelledby="changes">
+      <h2 id="changes">15. Changes and contact</h2>
+      <p>We will update this policy when relevant features, services or requirements change. The revision date appears above. Where required, we will provide additional notice or seek a new choice before new optional processing.</p>
+      <p><strong>Controller:</strong> Lukáš Pokorný, an individual operating under the name Muonity<br><strong>Email:</strong> <a href="mailto:dev@muonity.com">dev@muonity.com</a><br><strong>Website:</strong> <a href="https://muonity.com/">muonity.com</a></p>
+    </section>
+  </main>
+  <footer class="privacy-footer privacy-container"><small>© 2026 Muonity</small></footer>
+</body>
+</html>
