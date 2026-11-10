@@ -5,6 +5,7 @@ window.MUONITY_CONFIG = {
   email: "dev@muonity.com",
   games: {
     retroStackAttack: { googlePlayUrl: "https://play.google.com/store/apps/details?id=com.lukaspokorny.retrostackattack" },
+    pizzaWorm: { googlePlayUrl: "https://play.google.com/store/apps/details?id=studio.muonity.pizzaworm" },
     baitDash: { googlePlayUrl: "" }, // TODO: add only after release
   },
   socials: {

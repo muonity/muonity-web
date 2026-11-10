@@ -8,7 +8,7 @@
   --color-surface: #030817;
   --accent-retro: #22CFFF;
   --accent-bait: #00E5E5;
-  --accent-next: #DF66FF;
+  --accent-pizza: #DF66FF;
   --glow-intensity: .24;
   --max-content-width: 1280px;
   --page-gutter: clamp(22px, 4.8vw, 70px);
@@ -67,11 +67,11 @@ h1, h2, h3, p { margin: 0; }
 .game-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--card-gap); align-items: stretch; }
 .game-card { --card-accent: var(--accent-retro); position: relative; border: 2px solid var(--card-accent); border-radius: 22px; background: #040B1E; box-shadow: 0 0 9px color-mix(in srgb, var(--card-accent) 45%, transparent), 0 0 25px color-mix(in srgb, var(--card-accent) calc(var(--glow-intensity) * 100%), transparent); overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
 .game-card-bait { --card-accent: var(--accent-bait); }
-.game-card-next { --card-accent: var(--accent-next); }
+.game-card-pizza { --card-accent: var(--accent-pizza); }
 .game-card-content { display: flex; flex-direction: column; height: 100%; }
 .game-card picture { display: block; flex: 0 0 auto; }
 .game-card img { display: block; width: 100%; height: auto; }
-.game-status { display: flex; align-items: center; justify-content: center; flex: 1; min-height: 100px; padding: 6px 12px; border-top: 1px solid color-mix(in srgb, var(--card-accent) 26%, transparent); background: radial-gradient(ellipse at top, color-mix(in srgb, var(--card-accent) 10%, #040A19), #040817 80%); text-align: center; color: #C1CCE0; font-size: 14px; letter-spacing: .045em; }
+.game-status { display: flex; align-items: flex-end; justify-content: center; flex: 1; min-height: 100px; padding: 6px 12px; border-top: 1px solid color-mix(in srgb, var(--card-accent) 26%, transparent); background: radial-gradient(ellipse at top, color-mix(in srgb, var(--card-accent) 10%, #040A19), #040817 80%); text-align: center; color: #C1CCE0; font-size: 14px; letter-spacing: .045em; }
 .store-availability { width: 180px; max-width: 100%; display: grid; justify-items: center; }
 .game-card .store-badge { width: 100%; height: auto; transition: filter .2s ease; }
 .store-note { display: block; min-height: 1.2em; font-size: 12px; font-weight: 500; line-height: 1.2; letter-spacing: .14em; text-transform: uppercase; }
@@ -156,7 +156,7 @@ h1, h2, h3, p { margin: 0; }
   .planet-hero { width: 160%; height: 160%; left: 45%; top: 40%; }
   .moon-hero { width: 13%; right: -2%; top: 58%; }
   .game-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
-  .game-card-next { grid-column: 1 / -1; width: calc((100% - 26px) / 2); justify-self: center; }
+  .game-grid > .game-card:last-child { grid-column: 1 / -1; width: calc((100% - 26px) / 2); justify-self: center; }
   .pillars { padding-block: 32px; }
   .pillar { display: block; padding-inline: 22px; }
   .pillar:first-child { padding-left: 0; }
@@ -187,7 +187,7 @@ h1, h2, h3, p { margin: 0; }
   .section-heading h2 { font-size: 24px; letter-spacing: .13em; }
   .game-grid { grid-template-columns: minmax(0, 1fr); gap: 26px; max-width: 400px; margin-inline: auto; }
   .game-card { border-radius: 19px; }
-  .game-card-next { grid-column: auto; width: 100%; }
+  .game-grid > .game-card:last-child { grid-column: auto; width: 100%; }
   .pillars { grid-template-columns: 1fr; padding-block: 10px 24px; }
   .pillar, .pillar:first-child, .pillar:last-child { display: flex; padding: 22px 0; gap: 24px; }
   .pillar + .pillar::before { top: 0; left: 0; right: 0; bottom: auto; width: auto; height: 1px; background: linear-gradient(90deg, #193554, transparent); }
